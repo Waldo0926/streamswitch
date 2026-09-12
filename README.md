@@ -127,6 +127,8 @@ npm run build
 npm test
 ```
 
+GitHub Actions also runs `npm ci`, `npm test`, and `npm run build` automatically on pushes and pull requests to `main`.
+
 ## What I would extend next
 
 - difficulty presets and accessibility settings;
