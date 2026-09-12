@@ -1,5 +1,7 @@
 # StreamSwitch
 
+[![CI](https://github.com/Waldo0926/streamswitch/actions/workflows/ci.yml/badge.svg)](https://github.com/Waldo0926/streamswitch/actions/workflows/ci.yml)
+
 **English** · [中文](README.zh-CN.md)
 
 > An RxJS-powered reactive packet-routing game built with immutable state, deterministic simulation, and testable event streams.
@@ -19,7 +21,7 @@ I wanted a compact project that demonstrates the ideas I found most useful while
 - use deterministic pseudo-randomness so simulations can be replayed;
 - isolate DOM work from state transitions.
 
-This repository was rewritten as an independent portfolio project with a new domain, data model, UI, reducer design, random generator, tests, and documentation.
+StreamSwitch is designed as an independent portfolio project with its own domain, data model, UI, reducer architecture, deterministic random generator, tests, and documentation.
 
 ## Gameplay
 
