@@ -1,0 +1,62 @@
+:root {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #edf2ff;
+    background: #080b14;
+    font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(circle at top, #18213f 0%, #0a0e19 44%, #060810 100%); }
+button, kbd { font: inherit; }
+button { cursor: pointer; }
+
+.app-shell { width: min(1040px, calc(100% - 32px)); margin: 0 auto; padding: 56px 0 72px; }
+.hero { display: flex; gap: 32px; align-items: end; justify-content: space-between; margin-bottom: 24px; }
+.eyebrow { margin: 0 0 8px; color: #7ee7ff; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
+h1 { margin: 0; font-size: clamp(2.7rem, 8vw, 5.1rem); line-height: 0.95; letter-spacing: -0.06em; }
+.lede { max-width: 620px; margin: 18px 0 0; color: #aeb8d5; font-size: 1.05rem; line-height: 1.6; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(78px, 1fr)); gap: 10px; min-width: 320px; }
+.stats div { padding: 14px 16px; border: 1px solid #283254; border-radius: 16px; background: #11182a99; backdrop-filter: blur(14px); }
+.stats span { display: block; color: #7f8baa; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+.stats strong { display: block; margin-top: 5px; font-size: 1.35rem; }
+
+.board-card { padding: 18px; border: 1px solid #263052; border-radius: 28px; background: #0d1322cc; box-shadow: 0 28px 90px #0008; }
+#board { width: 100%; display: block; }
+.board-bg { fill: #0b1020; stroke: #202b4b; stroke-width: 2; }
+.board-label, .gate-label { fill: #596789; font-size: 13px; font-weight: 800; letter-spacing: 0.14em; }
+.track { stroke: #34405f; stroke-width: 5; stroke-linecap: round; stroke-dasharray: 3 13; }
+.gate-line { stroke: #65759e; stroke-width: 3; stroke-dasharray: 8 8; }
+.route { fill: none; stroke-width: 7; stroke-linecap: round; opacity: 0.75; }
+.route-0 { stroke: #5eead4; }
+.route-1 { stroke: #60a5fa; }
+.route-2 { stroke: #f472b6; }
+.packet rect { stroke-width: 2; filter: url(#glow); }
+.packet text { fill: #f8fbff; font-weight: 900; font-size: 14px; }
+.packet-alpha rect { fill: #0f766e; stroke: #5eead4; }
+.packet-beta rect { fill: #1d4ed8; stroke: #93c5fd; }
+.packet-gamma rect { fill: #9d174d; stroke: #f9a8d4; }
+.overlay-box { fill: #090d18ee; stroke: #3a4669; stroke-width: 2; }
+.overlay-title { fill: #fff; font-size: 24px; font-weight: 800; }
+.overlay-hint { fill: #9aa8cb; font-size: 14px; }
+
+.route-controls { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
+.route-controls button { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; border: 1px solid #2d385c; border-radius: 15px; color: #bcc6e0; background: #12192a; transition: 150ms ease; }
+.route-controls button:hover { transform: translateY(-1px); border-color: #5a6b9c; }
+.route-controls button.selected { color: #fff; border-color: #87a2ff; background: #27345d; box-shadow: inset 0 0 0 1px #6685e9; }
+.route-controls button span { display: inline-grid; width: 26px; height: 26px; place-items: center; border-radius: 8px; background: #060912; color: #91a7ef; font-weight: 800; }
+.help-card { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; margin-top: 20px; padding: 24px; border: 1px solid #202945; border-radius: 22px; background: #0d1320aa; }
+.help-card h2 { margin: 0 0 8px; font-size: 1rem; }
+.help-card p { margin: 0; color: #95a1bf; line-height: 1.6; }
+.keys { display: flex; flex-wrap: wrap; align-content: center; justify-content: flex-end; gap: 10px 18px; color: #95a1bf; font-size: 0.9rem; }
+kbd { display: inline-grid; min-width: 25px; height: 25px; margin-right: 3px; place-items: center; border: 1px solid #39466c; border-bottom-width: 3px; border-radius: 7px; background: #171f33; color: #d8e1ff; font-size: 0.77rem; font-weight: 800; }
+
+@media (max-width: 760px) {
+    .app-shell { width: min(100% - 20px, 1040px); padding-top: 28px; }
+    .hero { align-items: stretch; flex-direction: column; }
+    .stats { min-width: 0; }
+    .board-card { padding: 10px; border-radius: 20px; overflow-x: auto; }
+    #board { min-width: 660px; }
+    .route-controls { min-width: 660px; }
+    .help-card { grid-template-columns: 1fr; }
+    .keys { justify-content: flex-start; }
+}

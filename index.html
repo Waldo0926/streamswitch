@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>StreamSwitch — Reactive Packet Routing</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">RxJS · TypeScript · Functional state</p>
+          <h1>StreamSwitch</h1>
+          <p class="lede">
+            Route incoming packets to the correct channel before they reach the gateway.
+          </p>
+        </div>
+        <div class="stats" aria-label="Game status">
+          <div><span>Score</span><strong id="score">0</strong></div>
+          <div><span>Streak</span><strong id="streak">0</strong></div>
+          <div><span>Lives</span><strong id="lives">3</strong></div>
+        </div>
+      </section>
+
+      <section class="board-card">
+        <svg id="board" viewBox="0 0 760 460" role="img" aria-label="Packet routing game board">
+          <defs>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3.5" result="blur" />
+              <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+            </filter>
+          </defs>
+          <rect class="board-bg" x="0" y="0" width="760" height="460" rx="28" />
+          <text class="board-label" x="54" y="74">INBOUND STREAM</text>
+          <line class="track" x1="64" y1="230" x2="610" y2="230" />
+          <line class="gate-line" x1="620" y1="92" x2="620" y2="368" />
+          <text class="gate-label" x="604" y="64">GATEWAY</text>
+
+          <g class="routes" aria-label="Routes">
+            <path class="route route-0" d="M620 230 C665 230, 676 132, 724 132" />
+            <path class="route route-1" d="M620 230 C668 230, 680 230, 724 230" />
+            <path class="route route-2" d="M620 230 C665 230, 676 328, 724 328" />
+          </g>
+
+          <g id="packet-layer"></g>
+          <g id="overlay-layer"></g>
+        </svg>
+
+        <div class="route-controls" id="route-controls" aria-label="Route selector">
+          <button type="button" data-route="0"><span>1</span> Alpha</button>
+          <button type="button" data-route="1"><span>2</span> Beta</button>
+          <button type="button" data-route="2"><span>3</span> Gamma</button>
+        </div>
+      </section>
+
+      <section class="help-card">
+        <div>
+          <h2>How to play</h2>
+          <p>Each packet carries a route marker: A, B, or G. Select the matching route before it reaches the gateway.</p>
+        </div>
+        <div class="keys">
+          <span><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> choose route</span>
+          <span><kbd>↑</kbd><kbd>↓</kbd> move selection</span>
+          <span><kbd>P</kbd> pause</span>
+          <span><kbd>R</kbd> restart</span>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
