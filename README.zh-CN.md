@@ -1,5 +1,10 @@
 # StreamSwitch
 
+[![类型](https://img.shields.io/badge/%E7%B1%BB%E5%9E%8B-%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE-2563eb?style=for-the-badge)](#)
+[![技术](https://img.shields.io/badge/%E6%8A%80%E6%9C%AF-TypeScript_%C2%B7_RxJS-7c3aed?style=for-the-badge)](#)
+[![许可证](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-MIT-16a34a?style=for-the-badge)](LICENSE)
+
+
 [English](README.md) · **中文**
 
 > 一个基于 RxJS 的响应式数据包路由小游戏，用不可变状态、确定性模拟和可测试事件流实现。
