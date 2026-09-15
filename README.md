@@ -1,5 +1,10 @@
 # StreamSwitch
 
+[![Type](https://img.shields.io/badge/Type-Personal_Project-2563eb?style=for-the-badge)](#)
+[![Tech](https://img.shields.io/badge/Tech-TypeScript_%C2%B7_RxJS-7c3aed?style=for-the-badge)](#)
+[![License](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge)](LICENSE)
+
+
 [![CI](https://github.com/Waldo0926/streamswitch/actions/workflows/ci.yml/badge.svg)](https://github.com/Waldo0926/streamswitch/actions/workflows/ci.yml)
 
 **English** · [中文](README.zh-CN.md)
