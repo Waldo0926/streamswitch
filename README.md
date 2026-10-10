@@ -3,9 +3,7 @@
 [![Type](https://img.shields.io/badge/Type-Personal_Project-2563eb?style=for-the-badge)](#)
 [![Tech](https://img.shields.io/badge/Tech-TypeScript_%C2%B7_RxJS-7c3aed?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge)](LICENSE)
-
-
-[![CI](https://github.com/Waldo0926/streamswitch/actions/workflows/ci.yml/badge.svg)](https://github.com/Waldo0926/streamswitch/actions/workflows/ci.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/Waldo0926/streamswitch/ci.yml?branch=main&style=for-the-badge&label=CI)](https://github.com/Waldo0926/streamswitch/actions/workflows/ci.yml)
 
 **English** · [中文](README.zh-CN.md)
 
@@ -26,7 +24,7 @@ I wanted a compact project that demonstrates the ideas I found most useful while
 - use deterministic pseudo-randomness so simulations can be replayed;
 - isolate DOM work from state transitions.
 
-StreamSwitch is designed as an independent portfolio project with its own domain, data model, UI, reducer architecture, deterministic random generator, tests, and documentation.
+StreamSwitch is an independent project with its own domain, data model, UI, reducer architecture, deterministic random generator, tests, and documentation.
 
 ## Gameplay
 
@@ -148,4 +146,4 @@ See [Building a Small Reactive Simulation with RxJS](docs/ARTICLE.md) or the [Ch
 
 ## License
 
-MIT
+MIT, see [LICENSE](LICENSE).
