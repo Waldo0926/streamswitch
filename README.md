@@ -28,6 +28,8 @@ StreamSwitch is an independent project with its own domain, data model, UI, redu
 
 ## Gameplay
 
+![StreamSwitch mid-game: two packets on the inbound stream, the Alpha route selected, score 650 with a streak of 5](docs/screenshots/gameplay.png)
+
 Packets enter from the left and carry one of three route markers:
 
 - **A** → Alpha

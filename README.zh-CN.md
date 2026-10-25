@@ -28,6 +28,8 @@ StreamSwitch 有自己独立的领域、数据模型、UI、reducer 设计、确
 
 ## 玩法
 
+![游戏进行中：入站流上有两个数据包，当前选中 Alpha 路线，得分 650，连击 5](docs/screenshots/gameplay.png)
+
 数据包从左边进入，带有三种路线标记之一：
 
 - **A** → Alpha
